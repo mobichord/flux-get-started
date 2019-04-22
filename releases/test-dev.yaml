@@ -1,0 +1,17 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: test-dev
+  namespace: dev
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: darknode/httpbuddy: *
+spec:
+  releaseName: http-dev
+  chart:
+    git: ssh://git@github.com/mobichord/flux-get-started
+    ref: dev
+    path: charts/test-dev
+  values:
+    image: darknode/httpbuddy:latest
