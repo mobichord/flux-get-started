@@ -8,9 +8,12 @@ metadata:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:.*
 spec:
+  releaseName: httpdev
   chart:
     git: ssh://git@github.com/mobichord/flux-get-started
     ref: dev
     path: charts/test-dev
   values:
-    image: darknode/httpbuddy:latest
+    image:
+      repository: darknode/httpbuddy
+      tags: latest
