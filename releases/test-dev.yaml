@@ -8,7 +8,6 @@ metadata:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:.*
 spec:
-  releaseName: http-dev
   chart:
     git: ssh://git@github.com/mobichord/flux-get-started
     ref: dev
