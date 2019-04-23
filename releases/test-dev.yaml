@@ -9,7 +9,7 @@ metadata:
     flux.weave.works/tag.chart-image: glob:.*
 spec:
   chart:
-    git: ssh://git@github.com:mobichord/flux-get-started.git
+    git: ssh://git@github.com/mobichord/flux-get-started
     ref: dev
     path: charts/test-dev
   values:

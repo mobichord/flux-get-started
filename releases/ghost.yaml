@@ -10,8 +10,8 @@ metadata:
 spec:
   releaseName: ghost
   chart:
-    git: ssh://git@github.com/weaveworks/flux-get-started
-    ref: master
+    git: ssh://git@github.com/mobichord/flux-get-started
+    ref: dev
     path: charts/ghost
   values:
     image: bitnami/ghost:1.21.5-r0
