@@ -16,4 +16,4 @@ spec:
   values:
     image:
       repository: darknode/httpbuddy
-      tag: latest
+      tag: latest-1
